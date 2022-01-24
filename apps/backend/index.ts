@@ -1,1 +1,1 @@
-// TODO: initialize nestjs microservices
+// TODO: initialize nestjs monorepo for microservices
