@@ -1,1 +1,1 @@
-// TODO: initialize next.js application
+// TODO: initialize next.js-react application
