@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "microservices/main",
+  "sourceRoot": "microservices/main/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "microservices/main/tsconfig.app.json"
+  },
+  "projects": {
+    "main": {
+      "type": "application",
+      "root": "microservices/main",
+      "entryFile": "main",
+      "sourceRoot": "microservices/main/src",
+      "compilerOptions": {
+        "tsConfigPath": "microservices/main/tsconfig.app.json"
+      }
+    },
+    "vim-exercises--authorization": {
+      "type": "application",
+      "root": "microservices/vim-exercises--authorization",
+      "entryFile": "main",
+      "sourceRoot": "microservices/vim-exercises--authorization/src",
+      "compilerOptions": {
+        "tsConfigPath": "microservices/vim-exercises--authorization/tsconfig.app.json"
+      }
+    }
+  }
+}
