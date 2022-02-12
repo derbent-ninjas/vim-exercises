@@ -1,5 +1,8 @@
 {
   "name": "eslint",
   "version": "0.0.0",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "./.eslintrc.json"
+  ]
 }
