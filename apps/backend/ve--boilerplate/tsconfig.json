@@ -1,5 +1,5 @@
 {
-  "extends": "@ve-tsconfig/tsconfig-nest.json",
+  "extends": "ve--tsconfig/tsconfig-nest.json",
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
 }
