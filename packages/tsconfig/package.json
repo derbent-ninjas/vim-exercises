@@ -1,9 +1,10 @@
 {
-  "name": "tsconfig",
-  "version": "0.0.0",
+  "name": "ve--tsconfig",
+  "version": "0.0.1",
+  "license": "MIT",
   "private": true,
   "files": [
-    "base.json",
+    "tsconfig-base.json",
     "tsconfig-nest.json"
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "name": "eslint",
-  "version": "0.0.0",
+  "name": "ve--eslint",
+  "version": "0.0.1",
   "license": "MIT",
   "files": [
     "./.eslintrc.json"
