@@ -1,8 +1,8 @@
 {
-  "name": "ve--boilerplate",
+  "name": "dn-ve--microservice-boilerplate",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Derbent Ninjas",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
