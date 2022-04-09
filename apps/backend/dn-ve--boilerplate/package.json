@@ -55,7 +55,9 @@
     "typescript": "^4.2.3",
     "dn-ve--eslint": "workspace:*",
     "dn-ve--tsconfig": "workspace:*",
-    "dn-ve--prettier": "workspace:*"
+    "dn-ve--prettier": "workspace:*",
+    "dn-ve--nest-infrastructure": "workspace:*",
+    "dn-ve--errors": "workspace:*"
   },
   "jest": {
     "moduleFileExtensions": [
