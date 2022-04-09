@@ -1,5 +1,5 @@
 {
-  "extends": "ve--tsconfig/tsconfig-nest.json",
+  "extends": "dn-ve--tsconfig/tsconfig-nest.json",
   "compilerOptions": {
     "outDir": "dist/",
     "baseUrl": "."
