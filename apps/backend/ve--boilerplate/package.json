@@ -53,8 +53,9 @@
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.2.3",
-    "ve--eslint": "workspace:*",
-    "ve--tsconfig": "workspace:*"
+    "dn-ve--eslint": "workspace:*",
+    "dn-ve--tsconfig": "workspace:*",
+    "dn-ve--prettier": "workspace:*"
   },
   "jest": {
     "moduleFileExtensions": [
