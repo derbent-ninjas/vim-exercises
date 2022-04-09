@@ -1,10 +1,9 @@
 {
-  "name": "dn-ve--tsconfig",
+  "name": "dn-ve--prettier",
   "version": "0.0.1",
   "license": "MIT",
   "private": true,
   "files": [
-    "tsconfig-base.json",
-    "tsconfig-nest.json"
+    ".prettierrc.js"
   ]
 }

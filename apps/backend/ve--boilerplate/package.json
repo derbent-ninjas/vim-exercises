@@ -1,10 +1,10 @@
 {
-  "name": "ve--boilerplate",
+  "name": "dn-ve--microservice-boilerplate",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Derbent Ninjas",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
     "build:prod": "cross-env NODE_ENV=production nest build",
@@ -53,8 +53,9 @@
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.2.3",
-    "ve--eslint": "workspace:*",
-    "ve--tsconfig": "workspace:*"
+    "dn-ve--eslint": "workspace:*",
+    "dn-ve--tsconfig": "workspace:*",
+    "dn-ve--prettier": "workspace:*"
   },
   "jest": {
     "moduleFileExtensions": [
