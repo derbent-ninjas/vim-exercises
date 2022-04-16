@@ -35,10 +35,15 @@ importers:
       eslint: ^7.22.0
       eslint-config-prettier: ^8.1.0
       eslint-plugin-prettier: ^3.3.1
+      fluture: ^14.0.0
+      fp-ts: ^2.11.10
+      fp-ts-contrib: ^0.1.29
+      io-ts: ^2.2.16
       jest: ^26.6.3
       jest-extended: ^2.0.0
       jest-junit: ^13.1.0
       jest-sonar-reporter: ^2.0.0
+      monocle-ts: ^2.3.13
       prettier: ^2.2.1
       reflect-metadata: ^0.1.13
       rimraf: ^3.0.2
@@ -56,6 +61,11 @@ importers:
       '@nestjs/microservices': 7.6.18_b3355eaaab723e52e70bfca874d5ccb9
       '@nestjs/platform-express': 7.6.18_2664420588e0901c7943acb4693cbaf4
       cross-env: 7.0.3
+      fluture: 14.0.0
+      fp-ts: 2.11.10
+      fp-ts-contrib: 0.1.29_fp-ts@2.11.10
+      io-ts: 2.2.16_fp-ts@2.11.10
+      monocle-ts: 2.3.13_fp-ts@2.11.10
       reflect-metadata: 0.1.13
       rimraf: 3.0.2
       rxjs: 6.6.7
@@ -3417,6 +3427,14 @@ packages:
     resolution: {integrity: sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==}
     dev: true
 
+  /fluture/14.0.0:
+    resolution: {integrity: sha512-pENtLF948a8DfduVKugT8edTAbFi4rBS94xjHwzLanQqIu5PYtLGl+xqs6H8TaIRL7z/B0cDpswdINzH/HRUGA==}
+    engines: {node: '>=4.0.0'}
+    dependencies:
+      sanctuary-show: 2.0.0
+      sanctuary-type-identifiers: 3.0.0
+    dev: false
+
   /follow-redirects/1.14.8:
     resolution: {integrity: sha512-1x0S9UVJHsQprFcEC/qnNzBLcIxsjAV905f/UkQxbclCsoTWlacCNOpQa/anodLl2uaEKFhfWOvM2Qg77+15zA==}
     engines: {node: '>=4.0'}
@@ -3480,6 +3498,18 @@ packages:
   /forwarded/0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
     engines: {node: '>= 0.6'}
+    dev: false
+
+  /fp-ts-contrib/0.1.29_fp-ts@2.11.10:
+    resolution: {integrity: sha512-y+f+xlZqYgj2t+Alu/oat10UC491PByvH7XrT0ITc/DbDJK7LDJLShZJy2orjE7PlcJkO5niDenc1A/woyeB/Q==}
+    peerDependencies:
+      fp-ts: ^2.1.2
+    dependencies:
+      fp-ts: 2.11.10
+    dev: false
+
+  /fp-ts/2.11.10:
+    resolution: {integrity: sha512-wtUo3eA0/+GZnT+dCjkSt5CuGCH5ZXjjrcZvYm/3BC5KGavuwgvME+eRRHYtCGYWD6I+fJ2uZ9en/JVqDEPrJw==}
     dev: false
 
   /fragment-cache/0.2.1:
@@ -3877,6 +3907,14 @@ packages:
     resolution: {integrity: sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==}
     engines: {node: '>= 0.10'}
     dev: true
+
+  /io-ts/2.2.16_fp-ts@2.11.10:
+    resolution: {integrity: sha512-y5TTSa6VP6le0hhmIyN0dqEXkrZeJLeC5KApJq6VLci3UEKF80lZ+KuoUs02RhBxNWlrqSNxzfI7otLX1Euv8Q==}
+    peerDependencies:
+      fp-ts: ^2.5.0
+    dependencies:
+      fp-ts: 2.11.10
+    dev: false
 
   /ipaddr.js/1.9.1:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
@@ -5110,6 +5148,14 @@ packages:
     hasBin: true
     dev: true
 
+  /monocle-ts/2.3.13_fp-ts@2.11.10:
+    resolution: {integrity: sha512-D5Ygd3oulEoAm3KuGO0eeJIrhFf1jlQIoEVV2DYsZUMz42j4tGxgct97Aq68+F8w4w4geEnwFa8HayTS/7lpKQ==}
+    peerDependencies:
+      fp-ts: ^2.5.0
+    dependencies:
+      fp-ts: 2.11.10
+    dev: false
+
   /ms/2.0.0:
     resolution: {integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=}
 
@@ -6016,6 +6062,14 @@ packages:
 
   /safer-buffer/2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+
+  /sanctuary-show/2.0.0:
+    resolution: {integrity: sha512-REj4ZiioUXnDLj6EpJ9HcYDIEGaEexmB9Fg5o6InZR9f0x5PfnnC21QeU9SZ9E7G8zXSZPNjy8VRUK4safbesw==}
+    dev: false
+
+  /sanctuary-type-identifiers/3.0.0:
+    resolution: {integrity: sha512-YFXYcG0Ura1dSPd/1xLYtE2XAWUEsBHhMTZvYBOvwT8MeFQwdUOCMm2DC+r94z6H93FVq0qxDac8/D7QpJj6Mg==}
+    dev: false
 
   /sane/4.1.0:
     resolution: {integrity: sha512-hhbzAgTIX8O7SHfp2c8/kREfEn4qO/9q8C9beyY6+tvZ87EpoZ3i1RIEvp27YBswnNbY9mWd6paKVmKbAgLfZA==}

@@ -28,6 +28,11 @@
     "@nestjs/microservices": "^7.6.15",
     "@nestjs/platform-express": "^7.6.15",
     "cross-env": "^7.0.3",
+    "fluture": "^14.0.0",
+    "fp-ts": "^2.11.10",
+    "fp-ts-contrib": "^0.1.29",
+    "io-ts": "^2.2.16",
+    "monocle-ts": "^2.3.13",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.6.6"
