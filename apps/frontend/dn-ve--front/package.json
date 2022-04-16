@@ -1,0 +1,26 @@
+{
+  "name": "dn-ve--front",
+  "version": "0.0.1",
+  "description": "Next js frontend application for derbent-ninjas/vim-exercises project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "https://github.com/derbent-ninjas",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^12.1.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sass": "^1.50.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.36",
+    "@types/react": "^18.0.5",
+    "@types/react-dom": "^18.0.1",
+    "eslint": "^7.22.0",
+    "eslint-config-next": "^12.1.5",
+    "typescript": "^4.2.3"
+  }
+}
