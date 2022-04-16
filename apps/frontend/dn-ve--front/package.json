@@ -4,7 +4,7 @@
   "description": "Next js frontend application for derbent-ninjas/vim-exercises project",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev --port 3001"
   },
   "keywords": [],
   "author": "https://github.com/derbent-ninjas",
@@ -13,7 +13,11 @@
     "next": "^12.1.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "sass": "^1.50.0"
+    "sass": "^1.50.0",
+    "dn-ve--eslint": "workspace:*",
+    "dn-ve--tsconfig": "workspace:*",
+    "dn-ve--prettier": "workspace:*",
+    "dn-ve--errors": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^14.14.36",
