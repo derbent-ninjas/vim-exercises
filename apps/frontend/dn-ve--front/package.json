@@ -4,7 +4,10 @@
   "description": "Next js frontend application for derbent-ninjas/vim-exercises project",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev --port 3001"
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "keywords": [],
   "author": "https://github.com/derbent-ninjas",
