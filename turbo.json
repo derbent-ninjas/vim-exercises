@@ -4,6 +4,9 @@
       "cache": false
     },
     "test": {},
+    "lint": {
+      "outputs": []
+    },
     "build": {
       "dependsOn": [
         "^build"
@@ -13,8 +16,12 @@
         ".next/**"
       ]
     },
-    "lint": {
-      "outputs": []
+    "start": {
+      "dependsOn": [
+        "test",
+        "lint",
+        "build"
+      ]
     }
   }
 }
