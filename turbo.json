@@ -1,5 +1,9 @@
 {
   "pipeline": {
+    "dev": {
+      "cache": false
+    },
+    "test": {},
     "build": {
       "dependsOn": [
         "^build"
@@ -11,9 +15,6 @@
     },
     "lint": {
       "outputs": []
-    },
-    "dev": {
-      "cache": false
     }
   }
 }
