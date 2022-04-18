@@ -4,5 +4,9 @@
   "license": "MIT",
   "files": [
     "./.eslintrc.json"
-  ]
+  ],
+  "dependencies": {
+    "eslint": "^7.22.0",
+    "eslint-plugin-functional": "^4.2.1"
+  }
 }
