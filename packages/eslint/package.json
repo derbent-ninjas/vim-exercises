@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "files": [
-    "./.eslintrc.json"
+    "nest.eslintrc.json",
+    "next.eslintrc.json"
   ],
   "dependencies": {
     "eslint": "^7.22.0",

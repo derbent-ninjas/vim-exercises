@@ -20,7 +20,7 @@
         "@typescript-eslint",
         "functional"
     ],
-    "ignorePatterns": ["**/tests/**", "**/.controller.ts", "**/main.ts", "**/app.module.ts"],
+    "ignorePatterns": ["**/tests/**", "**/*.controller.ts", "**/main.ts", "**/app.module.ts"],
     "rules": {
         "indent": [
             "error",
@@ -38,6 +38,7 @@
             "error",
             "always"
         ],
-        "functional/no-class": "off"
+        "functional/no-class": "off",
+        "functional/functional-parameters": "off"
     }
 }
