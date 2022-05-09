@@ -273,16 +273,14 @@ importers:
 
   packages/vim-emulator:
     specifiers:
+      dn-ve--tsconfig: workspace:*
       jest: ^26.6.3
       jest-extended: ^2.0.0
-      jest-junit: ^13.1.0
-      jest-sonar-reporter: ^2.0.0
       ts-jest: ^26.5.4
     devDependencies:
+      dn-ve--tsconfig: link:../tsconfig
       jest: 26.6.3
       jest-extended: 2.0.0_jest@26.6.3
-      jest-junit: 13.1.0
-      jest-sonar-reporter: 2.0.0
       ts-jest: 26.5.6_jest@26.6.3
 
 packages:
@@ -4664,7 +4662,7 @@ packages:
     peerDependencies:
       jest: '>=27.2.5'
     dependencies:
-      jest: 26.6.3
+      jest: 26.6.3_ts-node@9.1.1
       jest-diff: 27.5.1
       jest-get-type: 27.5.1
     dev: true
