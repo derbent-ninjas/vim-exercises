@@ -1,4 +1,4 @@
-import { INVALID_COORDINATE } from '../shared/errors'
+import { COORDINATE_MUST_BE_INTEGER, COORDINATE_MUST_BE_POSITIVE } from '../shared/errors'
 import { isNotInteger } from '../shared/utils/isNotInteger'
 
 export class Coordinate {
@@ -16,13 +16,13 @@ export class Coordinate {
 
   private assertCoordinateIsPositive() {
     if (this.x <= 0 || this.y <= 0) {
-      throw new Error(INVALID_COORDINATE)
+      throw new Error(COORDINATE_MUST_BE_POSITIVE)
     }
   }
 
   private assertCoordinateIsLocatedAtIntegers () {
     if (isNotInteger(this.x) || isNotInteger(this.y)) {
-      throw new Error(INVALID_COORDINATE)
+      throw new Error(COORDINATE_MUST_BE_INTEGER)
     }
   }
 }
