@@ -20,7 +20,7 @@ export class Coordinate {
     }
   }
 
-  private assertCoordinateIsLocatedAtIntegers () {
+  private assertCoordinateIsLocatedAtIntegers() {
     if (isNotInteger(this.x) || isNotInteger(this.y)) {
       throw new Error(COORDINATE_MUST_BE_INTEGER)
     }
