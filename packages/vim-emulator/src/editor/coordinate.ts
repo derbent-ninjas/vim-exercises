@@ -3,10 +3,28 @@ import { isNotInteger } from '../shared/utils/isNotInteger'
 
 export class Coordinate {
   constructor(
-    private readonly x: number,
-    private readonly y: number,
+    private _x: number,
+    private _y: number,
   ) {
     this.assertCoordinateIsValid()
+  }
+
+  set x(x: number) {
+    this._x = x
+    this.assertCoordinateIsValid()
+  }
+
+  set y(y: number) {
+    this._y = y
+    this.assertCoordinateIsValid()
+  }
+
+  get x(): number {
+    return this._x
+  }
+
+  get y(): number {
+    return this._y
   }
 
   private assertCoordinateIsValid() {
@@ -15,13 +33,13 @@ export class Coordinate {
   }
 
   private assertCoordinateIsPositive() {
-    if (this.x <= 0 || this.y <= 0) {
+    if (this._x <= 0 || this._y <= 0) {
       throw new Error(COORDINATE_MUST_BE_POSITIVE)
     }
   }
 
   private assertCoordinateIsLocatedAtIntegers() {
-    if (isNotInteger(this.x) || isNotInteger(this.y)) {
+    if (isNotInteger(this._x) || isNotInteger(this._y)) {
       throw new Error(COORDINATE_MUST_BE_INTEGER)
     }
   }
