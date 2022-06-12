@@ -1,16 +1,39 @@
-import { INVALID_COORDINATE } from '../shared/errors'
+import { COORDINATE_MUST_BE_INTEGER } from '../shared/errors'
+import { isNotInteger } from '../shared/utils/isNotInteger'
 
 export class Coordinate {
   constructor(
-    private readonly x: number,
-    private readonly y: number,
+    private _x: number,
+    private _y: number,
   ) {
     this.assertCoordinateIsValid()
   }
 
+  set x(x: number) {
+    this._x = x
+    this.assertCoordinateIsValid()
+  }
+
+  set y(y: number) {
+    this._y = y
+    this.assertCoordinateIsValid()
+  }
+
+  get x(): number {
+    return this._x
+  }
+
+  get y(): number {
+    return this._y
+  }
+
   private assertCoordinateIsValid() {
-    if (this.x <= 0 || this.y <= 0) {
-      throw new Error(INVALID_COORDINATE)
+    this.assertCoordinateIsLocatedAtIntegers()
+  }
+
+  private assertCoordinateIsLocatedAtIntegers() {
+    if (isNotInteger(this._x) || isNotInteger(this._y)) {
+      throw new Error(COORDINATE_MUST_BE_INTEGER)
     }
   }
 }
