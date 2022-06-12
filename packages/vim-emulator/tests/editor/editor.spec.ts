@@ -17,7 +17,14 @@ describe('Editor', () => {
     })
 
     const refinesCursorCoordinateForTextTestCases = [
-      // vertical position > last line of text
+      // cursor at proper position
+      {
+        toString: () => 'cursor=(x=1,y=1), empty text - should change cursor to (x=1, y=1)',
+        startCoordinate: new Coordinate(-1, 1),
+        text: '',
+        expectedCoordinate: new Coordinate(1, 1),
+      },
+      // cursor below text
       {
         toString: () => 'cursor=(x=1,y=2), empty text - should change cursor to (x=1, y=1)',
         startCoordinate: new Coordinate(1, 2),
@@ -36,7 +43,7 @@ describe('Editor', () => {
         text: 'line\nline\nline',
         expectedCoordinate: new Coordinate(1, 3),
       },
-      // vertical position < 1(first line)
+      // cursor above text
       {
         toString: () => 'cursor=(x=1,y=0), empty text - should change cursor to (x=1, y=1)',
         startCoordinate: new Coordinate(1, 0),
@@ -54,6 +61,32 @@ describe('Editor', () => {
         startCoordinate: new Coordinate(1, -2),
         text: '',
         expectedCoordinate: new Coordinate(1, 1),
+      },
+      // cursor to the left from the text
+      {
+        toString: () => 'cursor=(x=0,y=1), empty text - should change cursor to (x=1, y=1)',
+        startCoordinate: new Coordinate(0, 1),
+        text: '',
+        expectedCoordinate: new Coordinate(1, 1),
+      },
+      {
+        toString: () => 'cursor=(x=-1,y=1), empty text - should change cursor to (x=1, y=1)',
+        startCoordinate: new Coordinate(-1, 1),
+        text: '',
+        expectedCoordinate: new Coordinate(1, 1),
+      },
+      // cursor to the right from the text
+      {
+        toString: () => 'cursor=(x=2,y=1), empty text - should change cursor to (x=1, y=1)',
+        startCoordinate: new Coordinate(2, 1),
+        text: '',
+        expectedCoordinate: new Coordinate(1, 1),
+      },
+      {
+        toString: () => 'cursor=(x=8,y=1), "hello" - should change cursor to (x=5, y=1)',
+        startCoordinate: new Coordinate(8, 1),
+        text: 'hello',
+        expectedCoordinate: new Coordinate(5, 1),
       },
     ]
 
