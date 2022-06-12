@@ -1,6 +1,11 @@
 import { Cursor } from './cursor'
 import { lines } from '../shared/utils/lines'
 
+interface FirstAndLastLinePositions {
+  firstLine: number;
+  lastLine: number;
+}
+
 export class Editor {
   private _lines: string[];
 
@@ -18,10 +23,19 @@ export class Editor {
   }
 
   private refineVertical(): void {
-    const lastLinePosition = this._lines.length
+    const { firstLine, lastLine } = this.getFirstAndLastLinesPositions()
+    const currentLine = this.cursor.verticalPosition
 
-    if (this.cursor.verticalPosition > lastLinePosition) {
-      this.cursor.verticalPosition = lastLinePosition
+    this.cursor.verticalPosition =
+      currentLine > lastLine ? lastLine :
+      currentLine < firstLine ? firstLine :
+      currentLine
+  }
+
+  private getFirstAndLastLinesPositions(): FirstAndLastLinePositions {
+    return {
+      firstLine: 1,
+      lastLine: this._lines.length
     }
   }
 
